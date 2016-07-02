@@ -1721,6 +1721,7 @@
                 }
             },
 
+/*
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -1739,6 +1740,7 @@
                      }
                 }
             },
+*/
 
             banCommand: {
                 command: 'ban',
@@ -1883,7 +1885,7 @@
                     }
                 }
             },
-
+/*
             commandsCommand: {
                 command: 'commands',
                 rank: 'user',
@@ -1896,6 +1898,7 @@
                     }
                 }
             },
+*/
 
             cmddeletionCommand: {
                 command: ['commanddeletion', 'cmddeletion', 'cmddel'],
@@ -2260,6 +2263,8 @@
                 }
             },
 
+/*
+//
             gifCommand: {
                 command: ['gif', 'giphy'],
                 rank: 'user',
@@ -2328,6 +2333,7 @@
                     }
                 }
             },
+*/
 
 /*
             helpCommand: {
@@ -2841,6 +2847,7 @@
                 }
             },
 
+/*
             pingCommand: {
                 command: 'ping',
                 rank: 'user',
@@ -2853,6 +2860,7 @@
                     }
                 }
             },
+*/
 
             refreshCommand: {
                 command: 'refresh',
