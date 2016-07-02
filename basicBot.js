@@ -3089,6 +3089,7 @@
                 }
             },
 
+/*
             sourceCommand: {
                 command: 'source',
                 rank: 'user',
@@ -3101,6 +3102,7 @@
                     }
                 }
             },
+*/
 
             statusCommand: {
                 command: 'status',
