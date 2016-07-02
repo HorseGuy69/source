@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/NoisYmenT/source/sourcemaster/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -231,27 +231,27 @@
         return str;
     };
 
-    var botCreator = "Yemasthui";
-    var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botCreator = "NoisYmenT";
+    var botMaintainer = "NoisYmenT"
+    var botCreatorIDs = ["5565914"];
 
     var basicBot = {
-        version: "2.8.17",
+        version: "1.0.0",
         status: false,
-        name: "basicBot",
+        name: "TrapCity Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+        chatLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "TrapCity Bot",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/lang/en.json",
+            scriptLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -261,18 +261,18 @@
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
-            blacklistEnabled: true,
+            blacklistEnabled: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: false,
-            voteSkipLimit: 10,
-            historySkip: false,
+            voteSkip: true,
+            voteSkipLimit: 6,
+            historySkip: true,
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
@@ -295,23 +295,23 @@
             motdEnabled: false,
             motdInterval: 5,
             motd: "Temporary Message of the Day",
-            filterChat: true,
+            filterChat: false,
             etaRestriction: false,
             welcome: true,
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
-            youtubeLink: null,
+            fbLink: "https://facebook.com/ravenueofficial",
+            youtubeLink: "https://www.youtube.com/ravenue",
             website: null,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -332,7 +332,7 @@
                 if (basicBot.status && basicBot.settings.autodisable) {
                     API.sendChat('!afkdisable');
                     API.sendChat('!joindisable');
-                }
+                }s
             },
             queueing: 0,
             queueable: true,
@@ -2476,7 +2476,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/NoisYmenT/source/sourcemaster/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
