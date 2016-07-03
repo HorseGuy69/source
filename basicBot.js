@@ -3207,10 +3207,11 @@
                                 func(i);
                             }
                         }
-                        */
+                        
                         else {
                             return API.sendChat(msg);
                         }
+*/
                     }
                 }
             },
