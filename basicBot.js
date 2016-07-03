@@ -1920,6 +1920,7 @@
                 }
             },
 
+/*
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
@@ -1955,6 +1956,8 @@
                     }
                 }
             },
+            */
+            
 
             cycleCommand: {
                 command: 'cycle',
