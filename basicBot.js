@@ -3194,7 +3194,6 @@
                         }
                         */
 
-/*
                         // This is a more efficient solution
                         if (msg.length > 250){
                             var split = msg.match(/.{1,250}/g);
@@ -3211,7 +3210,6 @@
                         else {
                             return API.sendChat(msg);
                         }
-*/
                     }
                 }
             },
