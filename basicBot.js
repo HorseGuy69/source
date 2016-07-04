@@ -2850,7 +2850,7 @@
                 }
             },
 
-/*
+
             pingCommand: {
                 command: 'ping',
                 rank: 'user',
@@ -2863,7 +2863,7 @@
                     }
                 }
             },
-*/
+
 
             refreshCommand: {
                 command: 'refresh',
