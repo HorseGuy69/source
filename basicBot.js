@@ -236,7 +236,7 @@
     var botCreatorIDs = ["5565914"];
 
     var basicBot = {
-        version: "1.0.0",
+        version: "1.1",
         status: false,
         name: "TrapCity Bot",
         loggedInID: null,
