@@ -2266,7 +2266,7 @@
                 }
             },
 
-/*
+
 //
             gifCommand: {
                 command: ['gif', 'giphy'],
@@ -2336,7 +2336,7 @@
                     }
                 }
             },
-*/
+
 
 /*
             helpCommand: {
