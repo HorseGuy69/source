@@ -238,7 +238,7 @@
     var basicBot = {
         version: "1.1",
         status: false,
-        name: "TrapCity Bot",
+        name: "Wtf Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
