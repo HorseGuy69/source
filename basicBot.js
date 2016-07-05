@@ -1,5 +1,6 @@
 /**
  *Copyright 2015 basicBot
+ * Copyright 2016 RAVENUE
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
  */
@@ -2859,6 +2860,9 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
+                        var from = chat.un;
+                        var msg = '@' + from + ', ';
+                        
                         API.sendChat(basicBot.chat.pong)
                     }
                 }
