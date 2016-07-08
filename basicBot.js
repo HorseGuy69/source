@@ -1948,7 +1948,7 @@
                                 return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.selfpunch, {name: name}));
                             }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
