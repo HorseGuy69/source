@@ -21,6 +21,11 @@
         "gives you an old cookie that was left out in the rain, it's moldy.",
         "bakes you fresh cookies, it smells amazing."
     ],
+    
+    "punchs": [
+        "This is punch number 1!",
+        "This is punch number 2!"
+],
     "balls": [
         "Signs point to yes.",
         "Yes.",
