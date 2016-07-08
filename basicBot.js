@@ -100,7 +100,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/NoisYmenT/source/sourcemaster/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/HorseGuy69/source/sourcemaster/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -237,22 +237,22 @@
     var botCreatorIDs = ["5565914"];
 
     var basicBot = {
-        version: "1.1",
+        version: "2.0",
         status: false,
         name: "Wtf Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/basicBot.js",
+        scriptLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/lang/en.json",
+        chatLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "TrapCity Bot",
+            botName: "Wtf Bot",
             language: "english",
-            chatLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/lang/en.json",
-            scriptLink: "https://rawgit.com/NoisYmenT/source/sourcemaster/basicBot.js",
+            chatLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/lang/en.json",
+            scriptLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -310,9 +310,9 @@
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/NoisYmenT/custom/custommaster/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/HorseGuy69/custom/custommaster/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/HorseGuy69/custom/custommaster/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/HorseGuy69/custom/custommaster/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -1938,7 +1938,7 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eatpunch);
                             return false;
                         }
                         else {
@@ -2529,7 +2529,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/NoisYmenT/source/sourcemaster/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/HorseGuy69/source/sourcemaster/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
