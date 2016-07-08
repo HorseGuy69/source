@@ -1926,9 +1926,9 @@
                 command: 'punch',
                 rank: 'user',
                 type: 'startsWith',
-                getPunch: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.punchs.length);
-                    return basicBot.chat.punchs[c];
+                getpunch: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.punches.length);
+                    return basicBot.chat.punches[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1951,7 +1951,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfpunch, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.punch, {nameto: user.username, namefrom: chat.un, punch: this.getPUNCH()}));
+                                return API.sendChat(subChat(basicBot.chat.punch, {nameto: user.username, namefrom: chat.un, punch: this.getpunch()}));
                             }
                         }
                     }
