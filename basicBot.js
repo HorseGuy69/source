@@ -2309,7 +2309,7 @@
             },
 
 
-//
+/*
             gifCommand: {
                 command: ['gif', 'giphy'],
                 rank: 'user',
@@ -2378,7 +2378,7 @@
                     }
                 }
             },
-
+*/
 
 /*
             helpCommand: {
