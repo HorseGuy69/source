@@ -1444,7 +1444,7 @@
             API.chatLog('Avatars capped at ' + basicBot.settings.startupCap);
             API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
             //socket();
-            loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
+            loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName})));  //version: basicBot.version})));
         },
         commands: {
             executable: function (minRank, chat) {
@@ -2927,7 +2927,26 @@
                     }
                 }
             },
+            
+/////////////////////////////////////////
 
+            rcsCommand: {
+                command: 'rcs',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var from = chat.un;
+                        var msg = '@' + from + ', ';
+                        
+                        API.sendChat("/me We use the RCS Plugin in this room. Get it here: https://rcs.radiant.dj/")
+                    }
+                }
+            },
+            
+//////////////////////////////////////////
 
             refreshCommand: {
                 command: 'refresh',
