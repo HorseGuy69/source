@@ -243,7 +243,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/basicBot.js",
         cmdLink: "The command list is being updated!", //"http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/lang/en.json",
+        chatLink: "https://rawgit.com/HorseGuy69/custom/custommaster/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -251,7 +251,7 @@
         settings: {
             botName: "Wtf Bot",
             language: "english",
-            chatLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/lang/en.json",
+            chatLink: "https://rawgit.com/HorseGuy69/custom/custommaster/lang/en.json",
             scriptLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
