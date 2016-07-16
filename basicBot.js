@@ -1886,7 +1886,7 @@
                     }
                 }
             },
-/*
+
             commandsCommand: {
                 command: 'commands',
                 rank: 'user',
@@ -1899,7 +1899,7 @@
                     }
                 }
             },
-*/
+
 
             cmddeletionCommand: {
                 command: ['commanddeletion', 'cmddeletion', 'cmddel'],
