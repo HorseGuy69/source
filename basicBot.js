@@ -242,7 +242,7 @@
         name: "Wtf Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
+        cmdLink: "The command list is being updated!", //"http://git.io/245Ppg",
         chatLink: "https://rawgit.com/HorseGuy69/source/sourcemaster/lang/en.json",
         chat: null,
         loadChat: loadChat,
