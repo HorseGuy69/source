@@ -1696,6 +1696,7 @@
                 }
             },
 
+/*
             autowootCommand: {
                 command: 'autowoot',
                 rank: 'user',
@@ -1708,7 +1709,9 @@
                     }
                 }
             },
+*/
 
+/*
             baCommand: {
                 command: 'ba',
                 rank: 'user',
@@ -1721,6 +1724,7 @@
                     }
                 }
             },
+*/
 
 /*
             ballCommand: {
@@ -1764,6 +1768,7 @@
                 }
             },
 
+/*
             blacklistCommand: {
                 command: ['blacklist', 'bl'],
                 rank: 'bouncer',
@@ -1803,6 +1808,7 @@
                 }
             },
 
+
             blinfoCommand: {
                 command: 'blinfo',
                 rank: 'bouncer',
@@ -1822,6 +1828,7 @@
                     }
                 }
             },
+*/
 
             bouncerPlusCommand: {
                 command: 'bouncer+',
@@ -1851,6 +1858,7 @@
                 }
             },
 
+/*
             botnameCommand: {
                 command: 'botname',
                 rank: 'manager',
@@ -1869,6 +1877,7 @@
                     }
                 }
             },
+*/
 
             clearchatCommand: {
                 command: 'clearchat',
@@ -2266,6 +2275,7 @@
                 }
             },
 
+/*
             forceskipCommand: {
                 command: ['forceskip', 'fs'],
                 rank: 'bouncer',
@@ -2284,6 +2294,7 @@
                     }
                 }
             },
+*/
 
             ghostbusterCommand: {
                 command: 'ghostbuster',
