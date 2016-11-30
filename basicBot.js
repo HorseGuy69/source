@@ -237,7 +237,7 @@
     var botCreatorIDs = ["5565914"];
 
     var basicBot = {
-        version: 2.1,
+        version: 6.9,
         status: false,
         name: "Wtf Bot",
         loggedInID: null,
@@ -276,7 +276,7 @@
             historySkip: true,
             timeGuard: true,
             maximumSongLength: 10,
-            autodisable: true,
+            autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
             thorCommand: false,
