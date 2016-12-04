@@ -1969,9 +1969,9 @@
 //////////////////////////////////////////////////
 
 
+//////////////////////////////////////////////////////      
 
 
-/*
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
@@ -2007,7 +2007,9 @@
                     }
                 }
             },
-            */
+
+//////////////////////////////////////////////////////            
+            
             
 
             cycleCommand: {
@@ -3210,7 +3212,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var from = chat.un;
-                        var msg = '\ [@' + from + '] ';
+                        var msg = '\/me  [@' + from + '] ';
 
                         msg += basicBot.chat.afkremoval + ': ';
                         if (basicBot.settings.afkRemoval) msg += 'ON';
