@@ -1726,7 +1726,7 @@
             },
 */
 
-/*
+
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -1745,7 +1745,7 @@
                      }
                 }
             },
-*/
+
 
             banCommand: {
                 command: 'ban',
