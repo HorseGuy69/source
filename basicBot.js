@@ -3212,7 +3212,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var from = chat.un;
-                        var msg = '\/me  [@' + from + '] ';
+                        var msg = '\  [@' + from + '] ';
 
                         msg += basicBot.chat.afkremoval + ': ';
                         if (basicBot.settings.afkRemoval) msg += 'ON';
